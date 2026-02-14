@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hussein Tahan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="background-color: black">
+        <!-- Header -->
+        <div class="header">
+<!--            <h5 style="padding-left: 30px; margin: 30px">filler 1</h5>-->
+<!--            <div style="height: 1px; background-color: white; width: 500px; margin: 20px 0;"></div>-->
+            <div style="display: flex; flex-direction: column; align-items: center">
+                <h1 style="margin: 0; padding: 3px">Hussein Tahan</h1>
+                <p style="margin: 0">McMaster University - Automation Systems Engineering</p>
+            </div>
+<!--            <div style="height: 1px; background-color: white; width: 500px; margin: 20px 0;"></div>-->
+<!--            <h5 style="padding-right: 30px; margin: 30px">filler 2</h5>-->
+        </div>
+
+        <!-- Experiences -->
+        <div class="experiences">
+            <h1 style="padding-bottom: 10px">Experiences</h1>
+            <div class="experience-card">
+                <div class="pic"></div>
+                <div class="body" style="display: flex; flex-direction: column; padding: 5px">
+                    <h3 style="padding-bottom: 5px">Manufacturing Process & Automation Intern</h3>
+                    <p style="font-size: small">
+                        I led a small team to identify and resolve MIG welding leak issues in the water heater production line, reducing detected leaks by 50% within two months. I also designed and implemented a fully automated weld monitoring system using sensors, ESP32s, MQTT, and a PostgreSQL database, achieving 95% accuracy in detecting completed welds. Alongside this, I worked directly with the welding team on the manufacturing floor, contributing to the production of 50,000 welded cylinders over six months.
+                    </p>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="pic"></div>
+                <div class="body"></div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <h1 style="text-align: center; padding-top: 40px">Projects</h1>
+        <div class="projects-container">
+            <div class="projects">
+                <div class="slide fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="rtc.jpg" style="width:100%" alt="Project One">
+                    <div class="text">Automated Sorting Arm</div>
+                </div>
+
+                <div class="slide fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="mtc.jpeg" style="width:100%" alt="Project Two">
+                    <div class="text">PLC Control System</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div style="text-align:center; padding-top: 15px">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+        <script src="slideshow.js"></script>
+    </div>
+</body>
+</html>
